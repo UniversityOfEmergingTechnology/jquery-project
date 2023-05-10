@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!-- buttons which will provide the user functionality to sort recipes -->
+    <h2>Sorting Buttons</h2>
+    <div class="allButtons">
+      <button id="sort-name-asc">Sort by Name (A-Z)</button>
+      <button id="sort-name-desc">Sort By Name (Z-A)</button>
+
+      <button id="sort-difficulty-asc">Sort by Difficulty (Easy - Hard)</button>
+      <button id="sort-difficulty-desc">
+        Sort by Difficulty (Hard - Easy)
+      </button>
+
+      <button id="sort-time-asc">Sort by Cook Time (Short - Long)</button>
+      <button id="sort-time-desc">Sort by Cook Time (Long - Short)</button>
+    </div>
+
+    <h2>Recipe List</h2>
+
+    <div id="recipe-list">
+      <ul class="list-group">
+        <!-- 1 for easy 2 for medium 3 for hard -->
+        <li
+          class="list-group-item"
+          data-name="Spaghetti"
+          data-difficulty="2"
+          data-time="30"
+        >
+          Spaghetti
+        </li>
+        <li
+          class="list-group-item"
+          data-name="Chicken Curry"
+          data-difficulty="1"
+          data-time="45"
+        >
+          Chicken Curry
+        </li>
+        <li
+          class="list-group-item"
+          data-name="Sushi"
+          data-difficulty="3"
+          data-time="60"
+        >
+          Sushi
+        </li>
+        <li
+          class="list-group-item"
+          data-name="Tacos"
+          data-difficulty="1"
+          data-time="25"
+        >
+          Tacos
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

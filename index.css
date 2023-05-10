@@ -1,0 +1,6 @@
+/* thats how we access data attributes in css file */
+
+li[data-time="30"]{
+    /* declaring your css */
+    color: red;
+}
